@@ -1,0 +1,55 @@
+{
+  "name": "advent-of-code-2023",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc -b",
+    "test": "jest --onlyChanged",
+    "test:ci": "ENABLE_SLOW_TESTS=1 jest",
+    "test:watch": "ENABLE_SLOW_TESTS=1 jest --watch --onlyChanged",
+    "last": "ts-node --files src/cli/run.ts last",
+    "day": "ts-node src/cli/run.ts",
+    "next": "ts-node src/cli/next.ts",
+    "eslint": "eslint --fix --cache .",
+    "eslint:check": "eslint --cache .",
+    "format": "prettier --cache --write . --log-level=warn",
+    "format:check": "prettier --cache -c .",
+    "check": "npm run build && npm run eslint:check && npm run format:check",
+    "lint": "npm run build && npm run eslint && npm run format",
+    "prepare": "husky install"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@jest/globals": "^29.3.1",
+    "@types/figlet": "^1.5.5",
+    "@types/jest": "^29.2.3",
+    "@types/node": "^20.8.4",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "@typescript-eslint/typescript-estree": "^6.7.5",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "^39.1.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^16.2.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.2",
+    "jest": "^29.3.1",
+    "lint-staged": "^15.1.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "chalk": "^5.1.2",
+    "figlet": "^1.5.2"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache --fix",
+    "*": "prettier --write --ignore-unknown"
+  }
+}

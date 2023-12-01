@@ -1,0 +1,21 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "jest.autoRun": { "watch": true },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.probe": ["javascript", "typescript"],
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "jest.jestCommandLine": "node_modules/.bin/jest src/",
+  "jest.testExplorer": {
+    "enabled": true,
+    "showInlineError": false
+  },
+  "jest.showCoverageOnLoad": true,
+  "cSpell.words": ["addx", "rugsacks"]
+}
