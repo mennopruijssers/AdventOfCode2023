@@ -4,6 +4,8 @@
 
 import * as fs from 'fs/promises';
 
+import * as copyPaste from 'copy-paste';
+
 async function main(): Promise<void> {
   const inputs = await fs.readdir('./inputs/');
 
@@ -12,7 +14,11 @@ async function main(): Promise<void> {
 
   const nextDayString = nextDayNumber.toString().padStart(2, '0');
   console.log(`creating day ${nextDayNumber}`);
-  await fs.writeFile(`inputs/day-${nextDayString}.txt`, '');
+
+  await fs.writeFile(
+    `inputs/day-${nextDayString}.txt`,
+    copyPaste.paste() || '',
+  );
 
   const file = await fs.readFile('src/days/day-00.ts', 'utf8');
   const fileTest = await fs.readFile('src/days/day-00.test.ts', 'utf8');
