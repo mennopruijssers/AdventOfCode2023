@@ -23,6 +23,7 @@
   "license": "ISC",
   "devDependencies": {
     "@jest/globals": "^29.3.1",
+    "@types/copy-paste": "^1.1.33",
     "@types/figlet": "^1.5.5",
     "@types/jest": "^29.2.3",
     "@types/node": "^20.8.4",
@@ -46,6 +47,7 @@
   },
   "dependencies": {
     "chalk": "^5.1.2",
+    "copy-paste": "^1.5.3",
     "figlet": "^1.5.2"
   },
   "lint-staged": {
