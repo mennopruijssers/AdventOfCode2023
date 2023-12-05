@@ -66,8 +66,4 @@ describe('range map', () => {
 
 dayRunner(Day, example, 35, 46);
 
-dayVerifier(5, 31599214, undefined);
-
-slowTest(() => {
-  dayVerifier(5, undefined);
-});
+dayVerifier(5, 31599214);
