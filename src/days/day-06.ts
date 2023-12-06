@@ -16,7 +16,7 @@ export const findMinTime = (race: RaceRecord): number => {
     const distance = calcDistance(i, race.time);
     if (distance > race.distance) return i;
   }
-  /* istanbul ignore next */
+  /* istanbul ignore next @preserve */
   throw new Error("can't win");
 };
 
@@ -25,7 +25,7 @@ export const findMaxTime = (race: RaceRecord): number => {
     const distance = calcDistance(i, race.time);
     if (distance > race.distance) return i;
   }
-  /* istanbul ignore next */
+  /* istanbul ignore next @preserve */
   throw new Error("can't win");
 };
 

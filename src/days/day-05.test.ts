@@ -1,4 +1,4 @@
-import { describe, expect, test } from '@jest/globals';
+import { describe, expect, test } from 'vitest';
 import Day, { RangeMap } from './day-05';
 import { dayRunner, dayVerifier, slowTest } from './test-util';
 

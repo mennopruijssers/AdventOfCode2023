@@ -1,4 +1,4 @@
-// istanbul ignore file
+// istanbul ignore file @preserve
 export function leastCommonMultiple(min: number, max: number) {
   function range(min: number, max: number) {
     const arr = [];

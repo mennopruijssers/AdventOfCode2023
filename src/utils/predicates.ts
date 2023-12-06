@@ -1,4 +1,4 @@
-// istanbul ignore file
+// istanbul ignore file @preserve
 
 export function notEmpty<T>(value: T | null | undefined): value is T {
   return value !== null && value !== undefined;

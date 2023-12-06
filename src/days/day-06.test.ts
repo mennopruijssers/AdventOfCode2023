@@ -1,6 +1,6 @@
-import Day, { calcDistance, findMinTime } from './day-06';
+import Day, { calcDistance } from './day-06';
 import { dayRunner, dayVerifier } from './test-util';
-import { describe, expect, test } from '@jest/globals';
+import { describe, expect, test } from 'vitest';
 
 const example = `Time:      7  15   30
 Distance:  9  40  200`;

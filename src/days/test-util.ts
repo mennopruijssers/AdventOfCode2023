@@ -1,5 +1,5 @@
-//istanbul ignore file: not covered by test
-import { beforeAll, beforeEach, describe, expect, it } from '@jest/globals';
+//istanbul ignore file: not covered by test @preserve
+import { beforeAll, beforeEach, describe, expect, it } from 'vitest';
 import { BaseDay } from '../day';
 import * as fs from 'fs/promises';
 

@@ -1,4 +1,4 @@
-// istanbul ignore file
+// istanbul ignore file @preserve
 
 import { Grid } from './grid';
 import { Point } from './types';
@@ -83,6 +83,6 @@ export function findShortestPath<T>({
     });
   }
 
-  // istanbul ignore next
+  // istanbul ignore next @preserve
   throw new Error("can't find path");
 }

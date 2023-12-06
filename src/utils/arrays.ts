@@ -1,4 +1,4 @@
-// istanbul ignore file
+// istanbul ignore file @preserve
 
 export const allPermutations = <T>(input: T[]): T[][] => {
   const result: T[][] = [];

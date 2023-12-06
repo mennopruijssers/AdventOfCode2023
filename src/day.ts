@@ -1,4 +1,4 @@
-/* istanbul ignore file */
+/* istanbul ignore file -- @preserve*/
 
 export abstract class BaseDay<Input, Return1, Return2 = Return1> {
   input: Input;
