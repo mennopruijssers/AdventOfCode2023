@@ -1,6 +1,6 @@
 import { describe, expect, test } from '@jest/globals';
 import Day, { RangeMap } from './day-05';
-import { dayRunner, dayVerifier, slowTest } from './test-util';
+import { dayRunner, dayVerifier } from './test-util';
 
 const example = `seeds: 79 14 55 13
 

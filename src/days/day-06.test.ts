@@ -1,4 +1,4 @@
-import Day, { calcDistance, findMinTime } from './day-06';
+import Day, { calcDistance } from './day-06';
 import { dayRunner, dayVerifier } from './test-util';
 import { describe, expect, test } from '@jest/globals';
 
