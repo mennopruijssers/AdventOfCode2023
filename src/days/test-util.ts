@@ -30,8 +30,7 @@ export function dayRunner<T1, T2>(
 
     if (partTwo !== undefined) {
       it('part 2', async () => {
-        const output1 = await day.partOne();
-        const output = await day.partTwo(output1);
+        const output = await day.partTwo(partOne as T1);
         expect(output).toBe(partTwo);
       });
     }

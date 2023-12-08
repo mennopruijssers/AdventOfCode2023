@@ -1,25 +1,6 @@
-// istanbul ignore file
-export function leastCommonMultiple(min: number, max: number) {
-  function range(min: number, max: number) {
-    const arr = [];
-    for (let i = min; i <= max; i++) {
-      arr.push(i);
-    }
-    return arr;
-  }
+export function leastCommonMultiple(numbers: number[]) {
+  const gcd = (a: number, b: number): number => (a ? gcd(b % a, a) : b);
+  const lcm = (a: number, b: number) => (a * b) / gcd(a, b);
 
-  function gcd(a: number, b: number): number {
-    return !b ? a : gcd(b, a % b);
-  }
-
-  function lcm(a: number, b: number) {
-    return (a * b) / gcd(a, b);
-  }
-
-  let multiple = min;
-  range(min, max).forEach(function (n) {
-    multiple = lcm(multiple, n);
-  });
-
-  return multiple;
+  return numbers.reduce(lcm);
 }
