@@ -20,6 +20,18 @@ export const allPermutations = <T>(input: T[]): T[][] => {
   return result;
 };
 
+export const allPairs = <T>(input: T[]): [T, T][] => {
+  const result: [T, T][] = [];
+
+  for (let i = 0; i < input.length - 1; i++) {
+    for (let j = i + 1; j < input.length; j++) {
+      result.push([input[i], input[j]]);
+    }
+  }
+
+  return result;
+};
+
 export const shuffleArray = <T>(input: T[]): T[] => {
   const array = [...input];
   for (let i = array.length - 1; i > 0; i--) {
